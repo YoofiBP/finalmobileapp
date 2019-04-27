@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/splash.css">
+  <title>Splash Screen</title>
+</head>
+
+<body>
+
+  <!-- Start of first page: #splash -->
+
+  <!-- Start of second page: #login -->
+  
+
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-app.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAlEYGuyWL-nZG8k7AwG9tcZ7SNnFDcokk",
+      authDomain: "calmmind-c225f.firebaseapp.com",
+      databaseURL: "https://calmmind-c225f.firebaseio.com",
+      projectId: "calmmind-c225f",
+      storageBucket: "calmmind-c225f.appspot.com",
+      messagingSenderId: "690720280396"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.12.0/validate.min.js"></script>
+  <script type="text/javascript" src="js/userhandling.js"></script>
+  <script type="text/javascript" src="js/databasehandling.js"></script>
+</body>
+
+</html>

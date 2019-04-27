@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/splash.css">
+  <title>Splash Screen</title>
+</head>
+
+<body>
+
+  <!-- Start of first page: #splash -->
+
+  <!-- Start of second page: #login -->
+
+  <div data-role="page" id="audios" data-theme="a">
+
+    <div data-role="header">
+      <h1>Audios</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+      <div class="content loginform ui-field-contain">
+        <iframe width="100%" height="200" scrolling="yes" frameborder="yes" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/608117772%3Fsecret_token%3Ds-MWTJc&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <iframe width="100%" height="200" scrolling="yes" frameborder="yes" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/608117772%3Fsecret_token%3Ds-MWTJc&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+      </div>
+    </div>
+
+    <div data-role="footer" data-id="foo1" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#audios" class="ui-btn-active ui-state-persist">Audios</a></li>
+			<li><a href="#videos">Videos</a></li>
+			<li><a href="#journal">Journal</a></li>
+			<li><a href="#settings">Settings</a></li>
+		</ul>
+	</div><!-- /navbar -->
+</div><!-- /footer -->
+  </div><!-- /page two -->
+
+  <div data-role="page" id="videos" data-theme="a">
+
+    <div data-role="header">
+      <h1>Video Meditation Lessons</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+<select id="anotherSelect" data-filter="true" data-input="#searchForSelect">
+<option value="">Select Top</option>
+<option value="Self-Acceptance">Self-Acceptance</option>
+    <option value="Confidence">Confidence</option>
+    <option value="Energy">Energy</option>
+    <option value="Focus">Focus</option>
+    <option value="Joy">Joy</option>
+    <option value="Intimacy">Intimacy</option>
+</select>
+      <div class="content loginform ui-field-contain videos">
+      </div>
+    </div>
+
+    <div data-role="footer" data-id="foo1" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#audios">Audios</a></li>
+			<li><a href="#videos" class="ui-btn-active ui-state-persist">Videos</a></li>
+			<li><a href="#journal">Journal</a></li>
+			<li><a href="#settings">Settings</a></li>
+		</ul>
+	</div><!-- /navbar -->
+</div><!-- /footer -->
+  </div><!-- /page two -->
+
+  <div data-role="page" id="journal" data-theme="a">
+
+    <div data-role="header">
+      <h1>Journal Entry</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+      <div class="content loginform ui-field-contain postinfo">
+        <div class="entries">
+
+        </div>
+        <a href="#new_entry"><button data-role="button" type="button" name="button">New Post</button></a>
+      </div>
+    </div>
+
+    <div data-role="footer" data-id="foo1" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#audios">Audios</a></li>
+			<li><a href="#videos">Videos</a></li>
+			<li><a href="#journal" class="ui-btn-active ui-state-persist">Journal</a></li>
+			<li><a href="#settings">Settings</a></li>
+		</ul>
+	</div><!-- /navbar -->
+</div><!-- /footer -->
+  </div><!-- /page two -->
+
+  <div data-role="page" id="new_entry" data-theme="a">
+
+    <div data-role="header">
+      <h1>Add Journal Entry</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+      <div class="content loginform ui-field-contain">
+        <input id="journal_title" type="text" name="" value="" placeholder="Title">
+        <textarea id="journal_post" name="journal_post" rows="30" cols="80"></textarea>
+        <img id="imageAttachments" />
+        <p>
+          Image Attachments
+        </p>
+        <button type="button" id="add_entry">Add Post</button>
+        <button type="button" id="cameraButton">Open Camera</button>
+        <button type="button" name="button" id="speech_to_text">Speech-To-Text</button>
+        <a href="index.html/#journal"><button data-role="button" type="button" name="button">Back</button></a>
+      </div>
+    </div>
+
+    <div data-role="footer" data-id="foo1" data-position="fixed">
+      <div data-role="footer" data-id="foo1" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#audios">Audios</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#journal" class="ui-btn-active ui-state-persist">Journal</a></li>
+        <li><a href="#settings">Settings</a></li>
+      </ul>
+    </div><!-- /navbar -->
+    </div><!-- /footer -->
+  </div><!-- /footer -->
+  </div><!-- /page two -->
+
+  <div data-role="page" id="settings" data-theme="a">
+
+    <div data-role="header">
+      <h1>Change Settings</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+      <div class="content loginform ui-field-contain">
+        <img id="settingImage" src="img/img_avatar2.png" alt="Profile Picture"/>
+        <h2 id="settingsUsername"></h2>
+        <a href="#about"><button type="button" name="button">About Calm Mind</button></a>
+        <button>FAQs</button>
+        <button id="share_with_contact" type="button">Share with Contact</button>
+        <button type="button" name="button">Change Account Settings</button>
+        <button id="signOut" type="button">Sign Out</button>
+      </div>
+    </div>
+
+    <div data-role="footer" data-id="foo1" data-position="fixed">
+      <div data-role="footer" data-id="foo1" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#audios">Audios</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#journal">Journal</a></li>
+        <li><a href="#settings" class="ui-btn-active ui-state-persist">Settings</a></li>
+      </ul>
+    </div><!-- /navbar -->
+    </div><!-- /footer -->
+  </div><!-- /footer -->
+  </div>
+
+  <div data-role="page" id="about" data-theme="a">
+
+    <div data-role="header">
+      <h1>About</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+      <div class="content loginform ui-field-contain about">
+        <h1>About Calm Mind</h1>
+        <p>
+          Meditation is a very useful part of everyday life
+        </p>
+        <a href="#settings"><button>Back to Settings</button></a>
+      </div>
+    </div>
+
+    <div data-role="footer">
+      <h4>Page Footer</h4>
+    </div><!-- /footer -->
+  </div>
+  <div data-role="page" id="login" data-theme="a">
+
+    <div data-role="header">
+      <h1>Login to Calm Mind</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+      <div class="content loginform ui-field-contain">
+        <input type="text" id="email" name="email" value="" placeholder="Email">
+        <input type="password" id="password" name="password" value="" placeholder="Password" /> <!-- /content -->
+        <input type="submit" name="submit" value="Log In" id="loginButton">
+        <a href="#register" data-direction="reverse"><small>Sign Up for an Account!</small></a>
+        <p id="loginErrors"></p>
+      </div>
+    </div>
+  </div><!-- /page two -->
+
+  <!-- Start of third page: #register -->
+  <div data-role="page" id="register">
+
+    <div data-role="header" data-theme="b">
+      <h1>Register for Account</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+      <div class="content loginform ui-field-contain">
+        <form class="" action="index.html" method="post">
+          <input type="email" id="sign_email" name="sign_email" value="" placeholder="Email">
+          <input type="password" id="sign_password" name="sign_password" value="" placeholder="Password" />
+          <input type="password" id="confirm_password" name="confirm_password" value="" placeholder="Confirm Password" />
+         <!-- <input type="submit" name="submit" id="signUpButton" value="Sign Up"> -->
+         <button type="button" name="submit" id="signUpButton">Sign Up</button>
+          <input type="text" id="username" name="username" value="" placeholder="What's your name">
+          <button type="button" name="submit" id="usernameButton">Next</button>
+        </form>
+        <a href="#login" data-direction="reverse"><small>Have an Account? Sign In!</small></a>
+      </div>
+      <p><a href="#one" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "one"</a></p>
+    </div><!-- /content -->
+
+  </div><!-- /page popup -->
+
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-app.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAlEYGuyWL-nZG8k7AwG9tcZ7SNnFDcokk",
+      authDomain: "calmmind-c225f.firebaseapp.com",
+      databaseURL: "https://calmmind-c225f.firebaseio.com",
+      projectId: "calmmind-c225f",
+      storageBucket: "calmmind-c225f.appspot.com",
+      messagingSenderId: "690720280396"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="css/jquery.mobile-1.4.5.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.12.0/validate.min.js"></script>
+  <script type="text/javascript" src="js/userhandling.js"></script>
+  <script type="text/javascript" src="js/storagehandling.js"></script>
+  <script type="text/javascript" src="js/databasehandling.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+[data-role=page] {
+  height: 100% !important;
+  position: relative !important;
+}
+
+[role=main] {
+  height: 90%;
+}
+
+#imageAttachments{
+  height: 100px;
+  width: 100px;
+}
+
+.content {
+  height: 100%;
+}
+
+.splash {
+  background-image: url('../img/dazzle.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.loginform {
+  margin: auto;
+  width: 90%;
+  text-align: center;
+}
+
+.postinfo {
+  text-align: left;
+}
+.ui-content {
+  padding: 0px;
+}
+
+form legend {
+  text-align: left;
+}
+
+.about {
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+#settingImage {
+  border-radius:50%;
+  height: 100px;
+  width: 100px;
+}

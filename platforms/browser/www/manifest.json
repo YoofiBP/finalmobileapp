@@ -1,9 +1,9 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "helloworld",
-  "short_name": "helloworld",
-  "version": "com.phonegap.helloworld",
+  "name": "Calm Mind",
+  "short_name": "Calm Mind",
+  "version": "com.example.calmmind",
   "description": "A blank PhoneGap app.",
   "author": "PhoneGap Team",
   "icons": [],

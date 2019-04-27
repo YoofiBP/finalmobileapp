@@ -278,6 +278,14 @@ module.exports = [
         "id": "cordova-plugin-splashscreen.SplashScreenProxy",
         "pluginId": "cordova-plugin-splashscreen",
         "runs": true
+    },
+    {
+        "file": "plugins/cordova-sms-plugin/www/sms.js",
+        "id": "cordova-sms-plugin.Sms",
+        "pluginId": "cordova-sms-plugin",
+        "clobbers": [
+            "window.sms"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -289,7 +297,8 @@ module.exports.metadata =
     "cordova-plugin-firebase": "2.0.5",
     "cordova-plugin-media": "5.0.2",
     "cordova-plugin-speechrecognition": "1.1.2",
-    "cordova-plugin-splashscreen": "5.0.2"
+    "cordova-plugin-splashscreen": "5.0.2",
+    "cordova-sms-plugin": "1.0.0"
 }
 // BOTTOM OF METADATA
 });

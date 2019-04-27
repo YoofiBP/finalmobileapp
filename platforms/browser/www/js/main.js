@@ -66,6 +66,19 @@ function checkAvailable(){
   });
 }
 
+function pickContact(){
+  navigator.contacts.pickContact(function (contact) {
+      // alert(JSON.stringify(contact.phoneNumbers[0].value));
+      var phoneNumber = contact.phoneNumbers[0].value;
+      console.log(contact.phoneNumbers[0].value);
+      //array = 'Best Coach: ' + data[0]['best_coach'] + '\n' + 'Best Striker: ' + data[0]['best_striker'] + '\n' + 'Best Defender: ' + data[0]['best_defender'] + '\n' + 'Best Midf-ielder: ' + data[0]['best_middle'] + '\n'
+      var message = "Checkout Calm Mind on the appStore";
+      window.plugins.socialsharing.shareViaSMS(message, phoneNumber, function(msg) {console.log('ok: ' + msg)}, function(msg) {alert('error: ' + msg)})
+  }, function (err) {
+      console.log('Error: ' + err);
+  });
+}
+
 function pageTwo(){
   $('#sign_email').hide();
   $('#sign_password').hide();
@@ -83,6 +96,7 @@ function pageThree(){
   $('#profileComplete').show();
 }
 
+$('#share_with_contact').click(pickContact);
 $("#cameraButton").click(takePicture);
 $("#galleryButton").click(pickPicture);
 $("#speech_to_text").click(checkAvailable);

@@ -14,13 +14,11 @@ $('#anotherSelect').change(function(){
 $('#add_entry').click(function(){
   var title = $('#journal_title').val();
   var content = $('#journal_post').val();
-  if(title == "" || content ==""){
-    alert("Enter the information");
-  }else{
   var user = firebase.auth().currentUser;
   var imageData = $('#imageAttachments').attr('src');
   if(imageData!=undefined){
   var imagebaseName = baseName(imageData);
+  console.log(imagebaseName);
   var getFileBlob = function(url, cb) {
          var xhr = new XMLHttpRequest();
          xhr.open("GET", url);
@@ -44,8 +42,8 @@ $('#add_entry').click(function(){
       };
 
       getFileObject(imageData, function(fileObject) {
-          var uploadTask = storageRef.child('images/'+imagebaseName).put(fileObject);
-
+          var uploadTask = storageRef.child('images/'+imagebaseName).put(fileObject).then(function(snapshot){console.log("Uploaded Blob");});
+          console.log("Got here");
           uploadTask.on('state_changed', function(snapshot) {
               console.log(snapshot);
           }, function(error) {
@@ -67,4 +65,4 @@ $('#add_entry').click(function(){
   }).catch(function(error){
     console.log(error);
   });
-}})
+})
